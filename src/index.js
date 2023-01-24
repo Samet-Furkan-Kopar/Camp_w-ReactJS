@@ -4,12 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'semantic-ui-css/semantic.min.css'
+import {BrowserRouter} from 'react-router-dom'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
- // <React.StrictMode>
-    <App />//app compenentini roota yerleştir
-  //</React.StrictMode>
+ 
+    <BrowserRouter><App/></BrowserRouter>//app compenentini roota yerleştir
+  
 );
 
 // If you want to start measuring performance in your app, pass a function
