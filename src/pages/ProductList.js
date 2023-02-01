@@ -1,10 +1,10 @@
 import React,{useState,useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import { Button, Icon,  Menu, Table } from 'semantic-ui-react'
-import ProductService from '../services/productService'
+import ProductService from '../services/ProductService'
 import { useDispatch } from 'react-redux'
 import { addToCart } from '../store/actions/cartActions'
-import { toast} from 'react-toastify'
+import { toast } from 'react-toastify'
 
 export default function ProductList() {
 

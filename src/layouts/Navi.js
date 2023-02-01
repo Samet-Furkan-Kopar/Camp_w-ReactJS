@@ -9,7 +9,7 @@ import { useSelector } from 'react-redux'
 //suan true signin durumunda
 export default function Navi() {
 const {cartItems} = useSelector(state => state.cart)
-const [isAuthenticated, setIsAuthenticated] = useState(true)
+const [isAuthenticated, setIsAuthenticated] = useState(false)
 const navigate = useNavigate()
 function handleSignOut(){
     setIsAuthenticated(false)

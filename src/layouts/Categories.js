@@ -6,9 +6,9 @@ export default function Categories() {
       <Container className='main'>
       <Menu inverted pointing vertical>
         <Menu.Item
-          name='home'
+          name='home' 
           
-        />
+        ></Menu.Item>
         <Menu.Item
           name='messages'
       

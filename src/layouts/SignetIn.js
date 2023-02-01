@@ -1,5 +1,6 @@
 import React from 'react'
 import {Menu, Image, Dropdown} from 'semantic-ui-react'
+import { Link } from "react-router-dom";
 //cıkıs yapa tıklanıldgı anda handlesignout devreye girer
 export default function SignetIn({signOut}) {
   return (
@@ -9,7 +10,7 @@ export default function SignetIn({signOut}) {
             <Dropdown pointing="top left" text='Samet'>
                 <Dropdown.Menu>
                 <Dropdown.Item text="Bilgilerim" icon="info"/>
-                <Dropdown.Item onClick={signOut} text="Cikis Yap" icon="sign-out"/>
+                <Dropdown.Item onClick={signOut}  text="Cikis Yap" icon="sign-out"><Link style={{color:"black"}} to={"/user/login"}>Çıkış yap</Link></Dropdown.Item>
 
                 
                 </Dropdown.Menu>
